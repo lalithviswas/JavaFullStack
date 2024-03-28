@@ -1,0 +1,8 @@
+1 Create Student class
+2 Define states & behaviors
+3 Create Student object
+4 JDBC code
+  → Establish Connection
+  → Prepare Statement
+5 Create DB & table
+6 Execute update
