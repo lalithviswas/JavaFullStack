@@ -1,0 +1,21 @@
+ALTER TABLE table_name
+ADD COLUMN column_name(Price) datatype(DECIMAL);
+
+ALTER TABLE table_name
+RENAME COLUMN column_name(YEAR) TO new_column_name(BIRTH_YEAR);
+
+ALTER TABLE table_name
+DROP COLUMN column_name(Price);
+
+ALTER TABLE table_name
+MODIFY COLUMN column_name(BIRTH_YEAR) INT;  
+
+ALTER TABLE table_name
+ADD CONSTRAINT UNIQUE (column_name1, column_name2)                     //By using the either way we can add
+//ADD CONSTRAINT ConstraintName UNIQUE (column_name1, column_name2)            //constraints to the columns
+
+ALTER TABLE table_name
+MODIFY COLUMN column_name INT;       //ALL THE PREVIOUS CONSTRAINTS GETS REPLACED WITH THE MENTIONED ONES!!
+
+//Rename table
+RENAME TABLE table_name TO table_name;

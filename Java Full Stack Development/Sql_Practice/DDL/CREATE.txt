@@ -1,0 +1,8 @@
+CREATE TABLE table_name
+(
+    ID INT PRIMARY KEY auto_increment,
+    NAME VARCHAR(20) NOT NULL,
+    YEAR INT 
+);
+
+INSERT INTO table_name (NAME, YEAR) VALUES ('Alex','2000');

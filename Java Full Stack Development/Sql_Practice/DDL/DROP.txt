@@ -1,0 +1,2 @@
+//Drop the Entire table
+DROP TABLE table_name;

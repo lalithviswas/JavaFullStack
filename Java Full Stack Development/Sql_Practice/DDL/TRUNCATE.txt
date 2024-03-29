@@ -1,0 +1,2 @@
+//Delete the data from the table, without deleting the structure of the table
+TRUNCATE TABLE table_name
