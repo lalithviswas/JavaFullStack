@@ -1,0 +1,5 @@
+CREATE USER Username IDENTIFIED BY 'Passsword';                 //Username will be without any Quotation marks but the
+                                                                  Passsword will be enclosed within 
+                                                       
+GRANT ALL PRIVILEGES database_name.table_name TO Username;
+GRANT ALL PRIVILEGES *.* TO Username;                           // *.* In case of all the databases and all the tables

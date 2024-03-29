@@ -1,0 +1,2 @@
+REVOKE ALL PRIVILEGES database_name.table_name TO Username;
+REVOKE ALL PRIVILEGES *.* TO Username;                           // *.* In case of all the databases and all the tables
