@@ -1,0 +1,16 @@
+//Using Savepoint, we can undo the transactions only till a particular savepoint rather than the Commit
+
+INSERT
+.
+.
+
+COMMIT;
+
+INSERT
+.
+.
+
+SAVEPOINT SavePoint_Name;
+
+ROLLBACK TO SavePoint_Name;   //Undoes transactions till the mentioned savepoint (i.e line13 and below)
+ROLLBACK;                     //Undoes transactions till the last commit (i.e line7 and below)

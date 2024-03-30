@@ -1,0 +1,2 @@
+DELETE table_name
+WHERE column_name2 = 'abc' AND column_name1 = 'xyz' ;

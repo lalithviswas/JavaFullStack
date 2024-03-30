@@ -1,0 +1,14 @@
+//Rollback is a command used to undo the operations
+//Generally, Using Rollback, the data or the transactions made until the last commit stays and the transactionsafter commit gets undid
+
+INSERT
+.
+.
+
+COMMIT;
+
+INSERT 
+.
+.
+
+ROLLBACK; //lines after the previous Commit, i.e line8 will be undid

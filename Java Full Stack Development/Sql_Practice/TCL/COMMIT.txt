@@ -1,0 +1,8 @@
+SET AUTO_COMMIT = 0 //Usually, auto commit is enabled by default in mySql, We are turning it off using this statement
+
+INSERT 
+.
+.
+.
+
+COMMIT;     //Commit is a command used to make the data stored permanantly
