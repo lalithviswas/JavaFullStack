@@ -34,6 +34,7 @@ public class AppForCRUD
     }
 
     public static void read(){
+        
         Configuration cfg = new Configuration();
         cfg.configure();
         SessionFactory factory = cfg.buildSessionFactory();
@@ -44,6 +45,7 @@ public class AppForCRUD
     }
 
     public static void update(){
+        
         Configuration cfg = new Configuration();
         cfg.configure();
         SessionFactory factory = cfg.buildSessionFactory();
@@ -59,6 +61,7 @@ public class AppForCRUD
     }
 
     public static void delete(){
+        
         Configuration cfg = new Configuration();
         cfg.configure();
         SessionFactory factory = cfg.buildSessionFactory();
