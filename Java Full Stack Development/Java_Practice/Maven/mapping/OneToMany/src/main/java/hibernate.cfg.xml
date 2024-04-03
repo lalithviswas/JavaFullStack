@@ -1,0 +1,45 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+        <session-factory>
+                <property name="hibernate.connection.url">jdbc:mysql://localhost/database1</property>
+                <property name="hibernate.connection.username">username</property>
+                <property name="hibernate.connection.password">password</property>
+                <property name="hibernate.dialect">•org.hibernate.dialect.MvSQL5Dialect</property>
+
+                <property name="hbm2ddl.auto">create</property>
+                
+                <mapping class="main.java.com.example.Customer"/>
+                <mapping class="main.java.com.example.Orders"/>
+                     
+        </session-factory>
+</hibernate-configuration>
+
+
+
+
+
+<!--
+IF THERE EXIST NO TABLE WITH THE MENTIONED NAME(student) IN THE DATABASE MENTIONED(college) 
+
+<hibernate-configuration>
+        <session-factory>
+                <property name="hibernate.connection.url">jdbc:mysql://localhost/college‹</property> 
+                <property name="hibernate.connection.username">username</property>
+                <property name="hibernate.connection.password">password</property>
+                <property name="hibernate.dialect">•org.hibernate.dialect.MvSQL5Dialect</property> 
+                
+                IF THERE EXISTS NO TABLE IN THE MENTIONED DATABASE, TO CREATE ONE,
+                we use this following tag:
+                <property name="hbm2ddl.auto">create</property> - - - - - - - - - - - - - - - CREATE
+                AND IF WE WANT TO UPDATE THE DATA IN THAT PARTICULAR TABLE:
+                we use this following tag:
+                <property name="hbm2ddl.auto">update</property> - - - - - - - - - - - - - - - UPDATE
+                
+                <mapping class="org.example.Student"/>
+        </session-factory>
+</hibernate-configuration>
+
+-->
