@@ -1,6 +1,6 @@
 1 Create Student class
 2 Define states & behaviors
-3 Create Student object
+3 Create Student object (in the class with main method)
 4 JDBC code
   → Establish Connection
   → Prepare Statement
