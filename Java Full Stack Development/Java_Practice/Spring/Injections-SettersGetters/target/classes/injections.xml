@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    
+    <!-- Using Setters-->
+    <bean id = "lappy" class = "com.example.demo.Laptop">
+       <property name="name" value="dell"></property>
+       <property name="price" value="30000"></property>
+    </bean>
+
+
+    <!-- USE EITHER ONE, using both causes exception-->    
+                                                          
+                                                          
+    <!-- Using Constructor-->
+    <bean id = "lappy" class = "com.example.demo.Laptop">
+        <constructor-arg value="dell"> </constructor-arg>
+        <constructor-arg value="30000"> </constructor-arg>
+    </bean>
+    
+</beans>
