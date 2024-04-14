@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean id="person" class="com.example.demo.Person">
+    <property name="names">
+        <list>
+            <value>Lalith</value>
+            <value>Viswas</value>
+        </list>
+    </property>
+    <property name="rules">
+        <set>
+            <value>Be on time!</value>
+        </set>
+    </property>
+    <property name="sessions">
+        <map>
+            <entry key="1" value="Java"></entry>
+            <entry key="2" value="Sql"></entry>
+            <entry key="3" value="Html"></entry>
+        </map>
+    </property>
+  </bean>
+
+
+
+</beans>
