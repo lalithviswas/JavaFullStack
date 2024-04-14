@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+           
+    <bean id = "session" class = "com.example.demo.Session">
+       <property name="tech" value="java"></property>
+    </bean>
+
+    <bean id = "session1" class = "com.example.demo.Session">
+        <property name="tech" value="sql"></property>
+     </bean>
+
+     <bean id = "session2" class = "com.example.demo.Session">
+        <property name="tech" value="html"></property>
+     </bean>
+
+    <bean id = "classroom" class = "com.example.demo.Classroom" autowire="byName"> <!-- using byName, the bean with the 'name of the id and instance variable gets created', returns null if there's no match-->
+          </bean>                                                                  <!-- using byType, the bean with the datatype of the instance variable gets created, but limited to one--> 
+            
+</beans>
